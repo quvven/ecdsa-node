@@ -2,7 +2,7 @@ body {
   font-family: "Muli", sans-serif;
   font-weight: 300;
   background-color: #e2e8f0;
-  padding: 40px;
+  margin: 0;
 }
 
 label {
@@ -14,12 +14,42 @@ label {
   color: #222;
 }
 
-.app {
+.layout {
+  width: 100%;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.menu {
+  background-color: #222;
+  height: 48px;
+}
+
+.menu ul {
+  list-style-type: none;
   display: flex;
-  max-width: 1400px;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 0 auto;
+}
+
+.menu ul li {
+  height: 34px;
+  margin: 0 10px;
+  padding: 14px 20px 0 20px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #555;
+}
+
+.menu ul li a {
+  color: #f4f6f8;
+  text-decoration: none;
+}
+
+.main {
+  padding: 30px;
+  display: flex;
 }
 
 .container {
@@ -41,6 +71,15 @@ label {
 }
 
 input {
+  padding: 10px 0;
+  border-radius: 0.125rem;
+  border: 1px solid rgb(226, 232, 240);
+  background-color: #fdfdfe;
+  padding-inline-start: 0.75rem;
+  font-size: 0.875rem;
+}
+
+select {
   padding: 10px 0;
   border-radius: 0.125rem;
   border: 1px solid rgb(226, 232, 240);
@@ -83,4 +122,23 @@ input {
 .transfer {
   display: flex;
   flex-direction: column;
+}
+
+.table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.table thead tr th {
+  border: 1px solid black;
+}
+
+.table tbody tr td {
+  padding: 3px 6px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+.table tbody tr td:last-child {
+  text-align: right;
 }
